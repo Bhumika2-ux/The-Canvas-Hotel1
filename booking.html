@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Booking — The Canvas Hotel</title>
+  <meta name="description" content="Book your stay at The Canvas Hotel — check availability and request reservations.">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script defer src="assets/js/main.js"></script>
+  <link rel="canonical" href="/booking.html">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">The Canvas Hotel</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation"><span class="hamburger"></span></button>
+      <nav id="primary-nav" class="primary-nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="amenities.html">Amenities</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="dining.html">Dining</a></li>
+          <li><a href="offers.html">Offers</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="booking.html" aria-current="page">Booking</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <div class="section-card">
+      <h1>Book Your Stay</h1>
+      <p class="muted">Check availability and request a reservation. We'll confirm within 24 hours.</p>
+      <section class="booking">
+        <form id="booking-form" class="booking-form" novalidate>
+          <label>Full name <input name="name" required aria-required="true"></label>
+          <label>Email <input name="email" type="email" required aria-required="true"></label>
+          <label>Room type
+            <select name="room" required aria-required="true">
+              <option value="deluxe">Deluxe King</option>
+              <option value="studio">Studio Suite</option>
+              <option value="executive">Executive Suite</option>
+            </select>
+          </label>
+          <label>Check-in <input name="checkin" type="date" required aria-required="true"></label>
+          <label>Check-out <input name="checkout" type="date" required aria-required="true"></label>
+          <label>Requests <textarea name="requests" rows="4"></textarea></label>
+          <button id="booking-submit" class="btn-primary" type="submit">Request Booking</button>
+          <div id="booking-message" role="status" aria-live="polite"></div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> The Canvas Hotel</p>
+      <nav aria-label="footer"><ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></nav>
+    </div>
+  </footer>
+</body>
+</html>

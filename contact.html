@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — The Canvas Hotel</title>
+  <meta name="description" content="Contact The Canvas Hotel — reach concierge, reservations or support.">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script defer src="assets/js/main.js"></script>
+  <link rel="canonical" href="/contact.html">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">The Canvas Hotel</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation"><span class="hamburger"></span></button>
+      <nav id="primary-nav" class="primary-nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="amenities.html">Amenities</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="dining.html">Dining</a></li>
+          <li><a href="offers.html">Offers</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <div class="section-card">
+      <h1>Contact Us</h1>
+      <p>For reservations, events or general inquiries, please use the form below.</p>
+      <form action="https://example.com/api/contact" method="post" class="contact-form">
+        <label>Name <input name="name" required></label>
+        <label>Email <input name="email" type="email" required></label>
+        <label>Message <textarea name="message" rows="6" required></textarea></label>
+        <button class="btn-primary" type="submit">Send</button>
+      </form>
+      <section>
+        <h2>Address</h2>
+        <address>123 Canvas Ave, City, Country</address>
+        <p><strong>Phone:</strong> +1 555 123 4567</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> The Canvas Hotel</p>
+      <nav aria-label="footer"><ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></nav>
+    </div>
+  </footer>
+</body>
+</html>
